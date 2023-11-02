@@ -11,14 +11,12 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      VERCEL_PROJECT_ID: prj_vDZr7jh1zRlVuTOT2AR5nt7IxVSr
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
 
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
       - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v1
-        with:
-          vercel_token: ${{ secrets.VERCEL_TOKEN }}
-          vercel_project_id: ${{ env.VERCEL_PROJECT_ID }}
+        run: |
+          vercel deploy --token $VERCEL_TOKEN
