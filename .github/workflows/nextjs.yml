@@ -17,6 +17,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Set VERCEL_INTERACTIVE to 0
+        run: echo 'export VERCEL_INTERACTIVE=0' >> $GITHUB_ENV
+
       - name: Deploy to Vercel
         run: |
           vercel deploy --token $VERCEL_TOKEN --prod
