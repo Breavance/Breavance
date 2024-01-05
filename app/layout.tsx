@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={poppins.className}>
         <Navbar />
-        <div className='min-h-screen mx-5'>
+        <div className='min-h-[80%] mx-5'>
           {children}
         </div>
         <Footer />
