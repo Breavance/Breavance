@@ -12,7 +12,7 @@ export default function Navbar() {
                 height={200}
             />
         </div>
-        <div className="flex gap-7">
+        <div className="flex gap-7 hidden">
             <Link href={'/sobre-nosotros'} className="">Sobre Nosotros</Link>
             <Link href={''}>Contáctanos</Link>
             <Link href={''}>Nuestros Proyectos</Link>
