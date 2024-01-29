@@ -17,11 +17,9 @@ export default function Navbar() {
                 height={200}
                 priority={true}
             /></Link>
-
-        <TiThMenu
-            className="md:hidden"
-            onClick={() => setShowMenu(!showMenu)}
-        />
+        <div className="flex md:hidden items-center justify-center bg-[#008080] h-10 w-10 rounded-lg" onClick={() => setShowMenu(!showMenu)}>
+            <TiThMenu />
+        </div>
         <div className="flex gap-7 max-md:hidden items-center">
             <Link href={'/'} className="hover:text-[#EF4665]">Inicio</Link>
             <Link href={'/sobre-nosotros'} className="hover:text-[#EF4665]">Sobre Nosotros</Link>
