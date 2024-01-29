@@ -1,4 +1,4 @@
-export default function NuestrosProyectos() {
+export default function Home() {
     return (
         <main>Nuestros Proyectos</main>
     )

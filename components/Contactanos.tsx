@@ -1,4 +1,4 @@
-export default function RedesSociales() {
+export default function Contactanos() {
     return (
         <div>Redes Sociales</div>
     )
