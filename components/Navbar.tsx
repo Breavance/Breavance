@@ -1,34 +1,46 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { TiThMenu } from "react-icons/ti";
 
 export default function Navbar() {
-    const showMenu = false;
-    return (<div className="navbar flex justify-between font-semibold mx-5 mt-5">
-        <div className="flex w-full justify-between">
-            <Image
-                className="w-1/2"
-                alt=""
-                src={"/nombre.png"}
+    const [showMenu, setShowMenu] = useState(false);
+    const closeMenu = () => { setShowMenu(false) }
+    return (<div className="flex justify-between font-semibold items-center pt-5 px-5">
+
+        <Link
+            href={'/'}><Image
+                alt="Breavance logo"
+                src={"/nombre.svg"}
                 width={200}
                 height={200}
-            />
-            <TiThMenu
-                className="md:hidden"
-                onClick={showMenu}
-            />
-        </div>
-        <div className="flex gap-7 max-md:hidden w-1/2">
-            <Link href={'/sobre-nosotros'} className="">Sobre Nosotros</Link>
-            <Link href={''}>Contáctanos</Link>
-            <button>
-                <Link href={''}>Nuestros Proyectos</Link>
-            </button>
-        </div>
-        {showMenu && (
-            <div className="fixed md:hidden">
-                hola
+                priority={true}
+            /></Link>
+
+        <TiThMenu
+            className="md:hidden"
+            onClick={() => setShowMenu(!showMenu)}
+        />
+        <div className="flex gap-7 max-md:hidden items-center">
+            <Link href={'/'} className="hover:text-[#EF4665]">Inicio</Link>
+            <Link href={'/sobre-nosotros'} className="hover:text-[#EF4665]">Sobre Nosotros</Link>
+            <Link href={'/contactanos'} className="hover:text-[#EF4665]">Contáctanos</Link>
+            <div className="bg-[#008080] p-2 rounded-lg hover:bg-[#EF4665]">
+                <Link href={'/nuestros-proyectos'} className="hover:bg-[#EF4665]">Nuestros Proyectos</Link>
             </div>
-        )}
+        </div>
+        {showMenu && (<Menu closeMenu={closeMenu} />)}
+    </div >)
+}
+
+function Menu({ closeMenu }) {
+    return (<div className="fixed md:hidden right-5 top-16 bg-[#008080] p-5 left rounded-lg">
+        <Link href={'/'} className="hover:text-[#EF4665]" onClick={closeMenu}>Inicio</Link>
+        <p><Link href={'/sobre-nosotros'} className="hover:text-[#EF4665]" onClick={closeMenu}>Sobre Nosotros</Link></p>
+        <p><Link href={'/contactanos'} className="hover:text-[#EF4665]" onClick={closeMenu}>Contáctanos</Link></p>
+        <button>
+            <Link href={'/nuestros-proyectos'} className="hover:text-[#EF4665]" onClick={closeMenu}>Nuestros Proyectos</Link>
+        </button>
     </div>)
 }

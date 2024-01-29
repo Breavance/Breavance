@@ -1,5 +1,5 @@
 export default function Contactanos() {
     return (
-        <div>Contactanos</div>
+        <main>Contactanos</main>
     )
 }
