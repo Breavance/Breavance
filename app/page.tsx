@@ -1,9 +1,7 @@
-import Image from 'next/image'
-
 export default function Home() {
   return (
-    <main className="flex text-center items-center">
-      <p className='w-full text-6xl'>Página en Construcción</p>
-    </main>
-  )
+    <div className="container mx-auto">
+      <p className="w-full text-6xl">Página en Construcción</p>
+    </div>
+  );
 }

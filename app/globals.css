@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --burdeo: #47141D;
-  --pink: #EF4665;
-  --cream: #FFEABD;
+  --burdeo: #47141d;
+  --pink: #ef4665;
+  --cream: #ffeabd;
+  --blue: #001f3f;
+  --turquesa: #00ced1;
 }
-html,
-body,
-#__next {
+
+html {
   min-height: 100vh;
 }
+
 body {
   padding: 0;
   margin: 0;
-}
-
-main {
-  min-height: calc(100vh - 52.91px);
+  background: linear-gradient(180deg, var(--burdeo), var(--blue));
+  background-repeat: no-repeat;
 }
