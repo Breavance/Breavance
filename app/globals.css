@@ -20,3 +20,11 @@ body {
   background: linear-gradient(180deg, var(--burdeo), var(--blue));
   background-repeat: no-repeat;
 }
+
+/* styles/globals.css o donde tengas tu archivo CSS */
+@layer utilities {
+  .text-shadow-white {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.6),
+      0px 0px 10px rgba(255, 255, 255, 0.4);
+  }
+}
