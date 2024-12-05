@@ -1,9 +1,9 @@
-import NotFound from "./not-found";
+import Slides from "@/components/Slides";
 
 export default function Home() {
   return (
-    <div className="container mx-auto">
-      <NotFound />
+    <div className="container mx-auto max-w-5xl">
+      <Slides />
     </div>
   );
 }

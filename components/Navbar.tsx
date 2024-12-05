@@ -9,7 +9,7 @@ export default function Navbar() {
   const onClickHamburguer = () => setOpen(!open);
 
   return (
-    <div className="flex items-center justify-between font-semibold text-white p-5">
+    <div className="flex items-center justify-between font-semibold text-white p-5 xl:w-[1280px] xl:mx-auto">
       <div className="justify-items-start">
         <Link href={"/"}>
           <Image alt="Breavance" src={"/nombre.png"} width={200} height={200} />
@@ -17,7 +17,7 @@ export default function Navbar() {
       </div>
 
       <div className="relative md:static">
-        <div
+        <button
           className="md:hidden relative md:static flex justify-end"
           onClick={onClickHamburguer}
         >
@@ -26,7 +26,7 @@ export default function Navbar() {
           ) : (
             <Bars3Icon className="text-white w-6" />
           )}
-        </div>
+        </button>
 
         <div className="absolute md:static right-[5px] top-[40px] md:right-0 md:top-0">
           <div
@@ -36,7 +36,7 @@ export default function Navbar() {
           >
             <Link
               href={"/sobre-nosotros"}
-              className="relative transition-transform duration-300 hover:scale-110 hover:text-shadow-white w-[145px]"
+              className="relative transition-transform duration-300 hover:scale-110 hover:text-shadow-white w-[155px]"
             >
               Sobre Nosotros
             </Link>
