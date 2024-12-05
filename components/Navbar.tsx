@@ -28,7 +28,7 @@ export default function Navbar() {
           )}
         </div>
 
-        <div className="absolute md:static right-[5px] top-[30px] md:right-0 md:top-0">
+        <div className="absolute md:static right-[5px] top-[40px] md:right-0 md:top-0">
           <div
             className={`${
               open ? "flex" : "hidden"
