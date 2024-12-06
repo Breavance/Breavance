@@ -5,7 +5,7 @@ export default function ComoFunciona() {
     <div className="text-center">
       <h2 className="text-2xl font-bold pb-20">¿Cómo funciona?</h2>
       <div className="flex flex-wrap justify-between">
-        <div className="md:w-1/2 md:max-w-[340px] lg:max-w-[480px] pb-20">
+        <div className="md:w-1/2 md:max-w-[340px] lg:max-w-[450px] pb-20">
           <Image
             alt="La Entrevista"
             src={"/proceso1.png"}
@@ -25,7 +25,7 @@ export default function ComoFunciona() {
           </div>
         </div>
 
-        <div className="md:w-1/2 md:max-w-[340px] lg:max-w-[480px] pb-20">
+        <div className="md:w-1/2 md:max-w-[340px] lg:max-w-[4500px] pb-20">
           <Image
             alt="Práctica"
             src={"/proceso2.png"}
@@ -45,7 +45,7 @@ export default function ComoFunciona() {
           </div>
         </div>
 
-        <div className="md:w-1/2 md:max-w-[340px] lg:max-w-[480px] pb-20 md:pb-0">
+        <div className="md:w-1/2 md:max-w-[340px] lg:max-w-[450px] pb-20 md:pb-0">
           <Image
             alt="Código"
             src={"/proceso3.png"}
@@ -64,7 +64,7 @@ export default function ComoFunciona() {
           </div>
         </div>
 
-        <div className="md:w-1/2 md:max-w-[340px] lg:max-w-[480px]">
+        <div className="md:w-1/2 md:max-w-[340px] lg:max-w-[450px]">
           <Image
             alt="Repite y Crece"
             src={"/proceso4.png"}

@@ -8,7 +8,8 @@ const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Breavance",
-  description: "A workspace for everyone to develope all kind of projects",
+  description:
+    "Un espacio de trabajo para que todos puedan desarrollar todo tipo de proyectos",
 };
 
 export default function RootLayout({

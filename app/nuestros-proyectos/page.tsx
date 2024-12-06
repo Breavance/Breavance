@@ -1,5 +1,7 @@
 export default function NuestrosProyectos() {
-    return (
-        <div>Nuestros Proyectos</div>
-    )
+  return (
+    <div>
+      <h2 className="text-2xl font-bold pb-20">Nuestros Proyectos</h2>
+    </div>
+  );
 }
