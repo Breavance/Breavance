@@ -3,12 +3,9 @@ import Image from "next/image";
 export default function ComoFunciona() {
   return (
     <div className="text-center">
-      <h2 className="text-2xl font-bold pb-20 text-shadow-white">
-        ¿Cómo funciona?
-      </h2>
       <h2 className="text-2xl font-bold pb-20">¿Cómo funciona?</h2>
       <div className="flex flex-wrap justify-between">
-        <div className="w-full md:w-1/2 md:max-w-[340px] lg:max-w-[480px] pb-20">
+        <div className="md:w-1/2 md:max-w-[340px] lg:max-w-[480px] pb-20">
           <Image
             alt="La Entrevista"
             src={"/proceso1.png"}
@@ -28,7 +25,7 @@ export default function ComoFunciona() {
           </div>
         </div>
 
-        <div className="w-full md:w-1/2 md:max-w-[340px] lg:max-w-[480px] pb-20">
+        <div className="md:w-1/2 md:max-w-[340px] lg:max-w-[480px] pb-20">
           <Image
             alt="Práctica"
             src={"/proceso2.png"}
@@ -48,7 +45,7 @@ export default function ComoFunciona() {
           </div>
         </div>
 
-        <div className="w-full md:w-1/2 md:max-w-[340px] lg:max-w-[480px] pb-20">
+        <div className="md:w-1/2 md:max-w-[340px] lg:max-w-[480px] pb-20 md:pb-0">
           <Image
             alt="Código"
             src={"/proceso3.png"}
@@ -67,7 +64,7 @@ export default function ComoFunciona() {
           </div>
         </div>
 
-        <div className="w-full md:w-1/2 md:max-w-[340px] lg:max-w-[480px] pb-20">
+        <div className="md:w-1/2 md:max-w-[340px] lg:max-w-[480px]">
           <Image
             alt="Repite y Crece"
             src={"/proceso4.png"}
