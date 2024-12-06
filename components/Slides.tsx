@@ -11,7 +11,7 @@ export default function Slides() {
           height={300}
           className="mx-auto md:mx-0"
         />
-        <div className="md:w-[480px] text-center pt-10 md:pt-0">
+        <div className="md:max-w-[340px] lg:max-w-[480px] text-center pt-5 md:pt-0">
           <h2 className="text-2xl font-bold pb-5">Deja fluir tus ideas</h2>
           <p>
             Contribuye a proyectos con el apoyo de otras personas. Desde páginas
@@ -31,7 +31,7 @@ export default function Slides() {
           height={300}
           className="mx-auto md:mx-0"
         />
-        <div className="md:w-[480px] text-center items-center pt-10 md:pt-0">
+        <div className="md:max-w-[340px] lg:max-w-[480px] text-center items-center pt-5 md:pt-0">
           <h2 className="text-2xl font-bold pb-5">
             Trabaja con diferentes personas
           </h2>
@@ -44,7 +44,7 @@ export default function Slides() {
         </div>
       </div>
 
-      <div className="md:flex justify-between md:flex-row-reverse">
+      <div className="md:flex pb-20 justify-between md:flex-row-reverse">
         <Image
           alt="innovación"
           src={"/Innovacion.png"}
@@ -52,7 +52,7 @@ export default function Slides() {
           height={300}
           className="mx-auto md:mx-0"
         />
-        <div className="md:w-[480px] text-center pt-10 md:pt-0">
+        <div className="md:max-w-[340px] lg:max-w-[480px] text-center pt-5 md:pt-0">
           <h2 className="text-2xl font-bold pb-5">Innova en cada proyecto</h2>
           <p>
             Participa en los proyectos activos que más te interesen, aportando
