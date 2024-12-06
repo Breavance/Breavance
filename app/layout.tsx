@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
           <Navbar />
           <main className="flex-grow px-5 py-10 container mx-auto content-center max-w-5xl">
             {children}
+            <SpeedInsights />
           </main>
           <Footer />
         </div>
