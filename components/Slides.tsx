@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Slides() {
   return (
     <div>
-      <div className="md:flex pb-20 pt-20 justify-between items-center md:flex-row-reverse">
+      <div className="md:flex pb-20 justify-between items-center md:flex-row-reverse">
         <Image
           alt="creatividad"
           src={"/Creatividad.png"}
@@ -44,7 +44,7 @@ export default function Slides() {
         </div>
       </div>
 
-      <div className="md:flex pb-20 justify-between md:flex-row-reverse">
+      <div className="md:flex justify-between md:flex-row-reverse">
         <Image
           alt="innovación"
           src={"/Innovacion.png"}
