@@ -49,7 +49,9 @@ export default function SobreNosotros() {
           </p>
         </div>
         <div className="flex">
-          <CheckBadgeIcon className="text-white w-8" />
+          <div className="w-8">
+            <CheckBadgeIcon className="text-white w-8" />
+          </div>
           <p className="content-center">
             Conectarse con una comunidad comprometida que fomenta el aprendizaje
             y el crecimiento.

@@ -37,18 +37,21 @@ export default function Navbar() {
             <Link
               href={"/sobre-nosotros"}
               className="relative transition-transform duration-300 hover:scale-110 hover:text-shadow-white w-[155px]"
+              onClick={() => setOpen(false)}
             >
               Sobre Nosotros
             </Link>
             <Link
               href={"/contactanos"}
               className="relative transition-transform duration-300 hover:scale-110 hover:text-shadow-white"
+              onClick={() => setOpen(false)}
             >
               Contáctanos
             </Link>
             <Link
               href={"/nuestros-proyectos"}
               className="relative transition-transform duration-300 hover:scale-110 hover:text-shadow-white"
+              onClick={() => setOpen(false)}
             >
               Nuestros Proyectos
             </Link>
