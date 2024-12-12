@@ -34,26 +34,28 @@ export default function SobreNosotros() {
       </div>
       <div className="text-left">
         <p>Por eso creamos un espacio gratuito, donde los aspirantes pueden:</p>
-        <div className="flex">
-          <CheckBadgeIcon className="text-white w-8 min-w-[22px] mr-3" />
-          <p className="content-center">
-            Vivir una experiencia laboral auténtica a través de proyectos
-            reales.
-          </p>
-        </div>
-        <div className="flex">
-          <CheckBadgeIcon className="text-white w-8 min-w-[24px] mr-[14px]" />
-          <p className="content-center">
-            Desarrollar habilidades técnicas y colaborativas en un entorno
-            práctico.
-          </p>
-        </div>
-        <div className="flex">
-          <CheckBadgeIcon className="text-white w-8 min-w-[26px] mr-5" />
-          <p className="content-center">
-            Conectarse con una comunidad comprometida que fomenta el aprendizaje
-            y el crecimiento.
-          </p>
+        <div className="py-5">
+          <div className="flex bg-white/10 rounded-2xl p-[10px] box-shadow-white border">
+            <CheckBadgeIcon className="text-white w-6 md:w-8 min-w-[24px] mr-[14px] md:mr-5" />
+            <p className="content-center">
+              Vivir una experiencia laboral auténtica a través de proyectos
+              reales.
+            </p>
+          </div>
+          <div className="flex my-4 bg-white/10 rounded-2xl p-[10px] box-shadow-white border">
+            <CheckBadgeIcon className="text-white w-6 md:w-8 min-w-[24px] mr-[14px] md:mr-5" />
+            <p className="content-center">
+              Desarrollar habilidades técnicas y colaborativas en un entorno
+              práctico.
+            </p>
+          </div>
+          <div className="flex bg-white/10 rounded-2xl p-[10px] box-shadow-white border">
+            <CheckBadgeIcon className="text-white w-6 md:w-8 min-w-[24px] mr-[14px] md:mr-5" />
+            <p className="content-center">
+              Conectarse con una comunidad comprometida que fomenta el
+              aprendizaje y el crecimiento.
+            </p>
+          </div>
         </div>
       </div>
       <div className="text-left">
@@ -61,11 +63,10 @@ export default function SobreNosotros() {
           Nuestro enfoque combina asesoramiento, trabajo en equipo con
           metodologías ágiles y el desarrollo de proyectos sostenibles.
         </p>
-        <p>
+        <p className="py-5">
           Valoramos el compromiso, porque creemos que con esfuerzo y dedicación,
           cualquier persona puede alcanzar su máximo potencial.
         </p>
-
         <p>
           En Breavance no solo construimos proyectos, construimos futuros.
           ¡Únete y sé parte de esta experiencia transformadora!
