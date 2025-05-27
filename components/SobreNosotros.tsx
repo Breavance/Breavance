@@ -8,8 +8,8 @@ export default function SobreNosotros() {
         <Image
           alt="Logo en blanco"
           src={"/nombre-blanco.png"}
-          width={300}
-          height={300}
+          width={400}
+          height={400}
           className="mx-auto md:mx-0"
         />
         <div className="md:max-w-[340px] lg:max-w-[480px] pt-5 md:pt-0">

@@ -2,7 +2,7 @@ import SobreNosotros from "@/components/SobreNosotros";
 
 export default function HomeSobreNosotros() {
   return (
-    <div>
+    <div className="pt-20">
       <SobreNosotros />
     </div>
   );
